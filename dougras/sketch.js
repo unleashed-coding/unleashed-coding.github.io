@@ -1,3 +1,4 @@
+let bg = {color: 30, color_min: 30, color_max: 200, fade: 0.25, flag: false, alpha: 50};
 let bubbles;
 let player;
 
@@ -8,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-  background(30, 50);
+  changeBackground();
   player.move(mouseX, mouseY);
   player.show();
 
@@ -23,7 +24,14 @@ function draw() {
 }
 
 function createFood() {
-  let offset = 0;
-  let num_bubbles = random(100, 300);
-  bubbles = Array(Math.round(num_bubbles)).fill().map(() => new Bubble(random(offset, width - offset), random(offset, height - offset)));
+  let num_bubbles = random(50, 200);
+  bubbles = Array(Math.round(num_bubbles)).fill().map(() => new Bubble(random(0, width), random(0, height)));
+}
+
+function changeBackground() {
+  background(bg.color, bg.alpha);
+  if (bg.color <= bg.color_min) bg.flag = true;
+  else if (bg.color >= bg.color_max) bg.flag = false;
+  bg.color += (bg.flag) ? bg.fade : -bg.fade;
+  console.log(bg.color);
 }
