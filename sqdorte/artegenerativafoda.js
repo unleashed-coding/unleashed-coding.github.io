@@ -1,13 +1,17 @@
 function setup() {
-  createCanvas(screen.width-100, screen.height-150);
+  createCanvas(window.innerWidth-4, window.innerHeight-4);
 
-  c = createVector(width/2, height/2);    // center
-  q = createVector(+1, +1);               // quadrant
-  l = 100;                                // length
-  s = 5;                                  // step
-  i = 0;                                  // index
-  y = 1;                                  // current iteration
-  z = Math.floor(Math.random()*80 + 30);  // max iterations
+  l = Math.floor(Math.random()*10+1)*10       // length
+  c = createVector(
+    l*Math.round((width/2)/l),
+    l*Math.round((height/2)/l)
+  );                                          // center
+  q = createVector(+1, +1);                   // quadrant
+  s = 5;                                      // step
+  i = 0;                                      // index
+  y = 1;                                      // current iteration
+  z = Math.floor(Math.random()*80 + 30);      // max iterations
+  stroke(Math.floor(Math.random()*150));      // line color
 }
 
 function draw() {
