@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<title>Estourando balões</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<script  src="game.js"></script>
+		
+	</head>
+
+	<body onload="iniciarGame()">
+		<div id="table">
+			<table class="form-group">
+				<tr>
+					<td><img src="img/balao_azul_grande.png" /></td>
+					<td><span id="baloesVivos" class="fontNBaloes"></span></td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<tr>
+					<td><img src="img/balao_azul_grande_estourado.png" /></td>
+					<!--tavivo ou ta morto?? akskfsk (schrodinger)-->
+					<td><span id="baloesMortos" class="fontNBaloes"></span></td>
+				</tr>
+			</table>
+			<br>
+			
+			<table style="width: 140px; height: 132px; ">
+				<tr>
+					<td class="cronometroIMG">
+						<span id="c" class="cro"></span>
+					</td>
+				</tr>
+			</table>
+
+			<table style=" height: 132px; ">
+				<tr>
+					<td>
+						<button type="button" class="btn btn-lg btn-danger" onclick="reiniciar()" >Reiniciar</button>	
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		
+			
+		<div  id="cena" class="cenario"> </div>
+	</body>
+	
+</html>
