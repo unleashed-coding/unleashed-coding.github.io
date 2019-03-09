@@ -1,0 +1,29 @@
+/*configurar a cor de funda da tabela, altura...*/
+#table{
+    float:left;
+    width: auto;
+    height: 550px;
+    background: #FFF;
+    margin-right: 300px;
+}
+/*tamanho da fonte dos segundos que ficam no cronometro*/
+.cro{
+    font-size: 30px;
+    color: blue;
+}
+/*para fazer aparecer o cenario, definir um tamanho para ele..*/
+.cenario{
+    float: left;
+    width: 600px;
+    height:550px;
+    background: url('img/cenario.png');
+}
+/*para aparecer o conometro e alinhar o tempo*/
+.cronometroIMG{
+    background: url('img/cronometro.png');
+    text-align: center;
+}
+/*pra definir um tamanho pra contagem de baloes..*/
+.fontNBaloes{
+    font-size: 40px;
+}
