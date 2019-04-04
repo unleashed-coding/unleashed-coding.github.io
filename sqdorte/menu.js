@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  arts = ['artegenerativafoda', 'generartistic', 'selgnairt'];
+  arts = ['artegenerativafoda', 'generartistic', 'selgnairt', 'blebubs'];
   ul = document.getElementById('ul');
 
   arts.forEach(art => {
