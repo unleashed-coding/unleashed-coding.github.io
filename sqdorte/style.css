@@ -1,0 +1,19 @@
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  padding-top: 30px; 
+}
+
+a {
+  outline: none;
+  color: #4c4d4f;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #8fefb2;
+}
