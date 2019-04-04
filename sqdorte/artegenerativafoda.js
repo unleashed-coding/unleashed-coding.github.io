@@ -13,7 +13,7 @@ function defaultArgs() {
 }
 
 function setup() {
-  createCanvas(window.innerWidth-4, window.innerHeight-4);
+  createCanvas(window.innerWidth, window.innerHeight);
   defaultArgs();
   r = -100;
 };
