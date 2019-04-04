@@ -3,7 +3,7 @@ var s;
 var p;
 
 function setup() {
-  createCanvas(window.innerWidth-4, window.innerHeight-4);
+  createCanvas(window.innerWidth, window.innerHeight);
 
   l = 15;     // length
   s = 30;     // spacing
