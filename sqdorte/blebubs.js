@@ -54,7 +54,8 @@ function draw() {
       index = k[0];
       bubble = k[1];
 
-      fill(5500/bubble.z);
+      fill(5500/bubble.z, (c.y-bubble.y)/5);
+
 
       ellipse(c.x+bubble.x, c.y+bubble.y, bubble.z);
       bubble.y -= 50/bubble.z
