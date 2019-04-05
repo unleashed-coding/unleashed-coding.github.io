@@ -1,7 +1,7 @@
 function z(r) {
   bubbles = [];
 
-  for (var x = 0; x <= Math.floor(Math.random()*100+50); x++) {
+  for (var x = 0; x <= Math.floor(Math.random()*r*10+r/2); x++) {
     theta = Math.random()*360;
 
     i = cos(theta)*r;
@@ -54,8 +54,7 @@ function draw() {
       index = k[0];
       bubble = k[1];
 
-      fill(5500/bubble.z, (c.y-bubble.y)/5);
-
+      fill(5500/bubble.z, bubble.z*4);
 
       ellipse(c.x+bubble.x, c.y+bubble.y, bubble.z);
       bubble.y -= 50/bubble.z
